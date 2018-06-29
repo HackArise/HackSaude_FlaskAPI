@@ -30,5 +30,22 @@ def EmployeeRegister():
     db.session.commit()
     return Response(status=200, mimetype='application/json')
 
+@app.route('/localtype/register', methods=['POST'])
+def LocaltypeRegister():
+    localtype = request.get_json()
+    db.session.add(LocalType(type=localtype['type'], tag=localtype['tag']))
+    db.session.commit()
+    return Response(status=200, mimetype='application/json')
+
+@app.route('/local/register', methods=['POST'])
+def LocalRegister():
+    local = request.get_json()
+    db.session.add(Local(latitude=local['latitude'], longitude=local['longitude'],
+                            name=local['name'], address=local['address'], phone=local['phone'],
+                            local_type=LocalType.query.filter_by(type=local['tipo']).first()))
+    db.session.commit()
+    return Response(status=200, mimetype='application/json')
+
+
 with app.app_context():
 	db.create_all()
