@@ -1,6 +1,6 @@
 from flask import Flask, Response, render_template, jsonify, request
 from models import Employee, Field, LocalType, Local, Demand, Journey, db
-from schema import EmployeeSchema, FieldSchema, LocalTypeSchema, DemandSchema, JourneySchema
+from schema import EmployeeSchema, FieldSchema, LocalTypeSchema, DemandSchema, JourneySchema, LocalSchema
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://arise:arise@localhost'\
@@ -68,8 +68,14 @@ def EmployeeList():
     query_name = request.args.get('name')
     if query_name:
         query_employee = Employee.query.filter_by(name=query_name).first()
-        print(query_employee.field_id)
         return jsonify(EmployeeSchema().dump(query_employee).data)
+
+@app.route('/local', methods=['GET'])
+def LocalGet():
+    query_name = request.args.get('name')
+    if query_name:
+        query_local = Local.query.filter_by(name=query_name).first()
+        return jsonify(LocalSchema().dump(query_local).data)
 
 
 with app.app_context():

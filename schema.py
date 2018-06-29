@@ -16,14 +16,19 @@ class FieldSchema(ma.Schema):
     # employees = fields.Nested(EmployeeSchema, Many=True)
     # demands = fields.Nested(DemandSchema, Many=True)
 
-class LocalSchema(ma.Schema):
+class DemandSchema(ma.Schema):
     id = fields.Int(dump_only=True)
-    latitude = fields.Str()
-    longitude = fields.Str()
+    fields = fields.Nested(FieldSchema, attribute='field_demands', only=['name'])
+    # local_id = fields.Nested(LocalSchema)
+
+class LocalSchema(ma.Schema):
     name = fields.Str()
     address = fields.Str()
+    latitude = fields.Str()
+    longitude = fields.Str()
     phone = fields.Str()
-    # local_type_id = fields.Nested(LocalTypeSchema)
+    local_type = fields.Nested(LocalTypeSchema, attribute='local_type', only=['type','tag'])
+    demands = fields.Nested(DemandSchema, many=True, only=['fields'])
 
 class JourneySchema(ma.Schema):
     id = fields.Int(dump_only=True)
@@ -37,8 +42,3 @@ class EmployeeSchema(ma.Schema):
     path_image = fields.Str()
     field = fields.Nested(FieldSchema, attribute='field_employees', only=['name','description'])
     journeys = fields.Nested(JourneySchema, many=True, only=['begin', 'end', 'local' ])
-
-class DemandSchema(ma.Schema):
-    id = fields.Int(dump_only=True)
-    field_id = fields.Nested(FieldSchema)
-    local_id = fields.Nested(LocalSchema)
