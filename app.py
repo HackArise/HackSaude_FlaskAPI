@@ -63,6 +63,14 @@ def DemandRegister():
     db.session.commit()
     return Response(status=200, mimetype='application/json')
 
+@app.route('/employee', methods=['GET'])
+def EmployeeList():
+    query_name = request.args.get('name')
+    if query_name:
+        query_employee = Employee.query.filter_by(name=query_name).first()
+        print(query_employee.field_id)
+        return jsonify(EmployeeSchema().dump(query_employee).data)
+
 
 with app.app_context():
 	db.create_all()
