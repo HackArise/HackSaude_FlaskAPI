@@ -40,8 +40,8 @@ class Local(db.Model):
     phone = db.Column(db.String(80))
     local_type_id = db.Column(db.Integer, db.ForeignKey('LocalType.id'))
     #RELATIONS#
-    journeys = db.relationship('Journey', backref='local', lazy=True)
-    demands = db.relationship('Demand', backref='local', lazy=True)
+    journeys = db.relationship('Journey', backref='local_journeys', lazy=True)
+    demands = db.relationship('Demand', backref='local_demands', lazy=True)
 
 class LocalType(db.Model):
     __tablename__='LocalType'

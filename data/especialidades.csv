@@ -1,0 +1,74 @@
+TIPO;MEDICO;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+Contagem de EMPRESA;R�tulos de Coluna;;;;;;;;;;;;;;;;;
+R�tulos de Linha;ADMC                                                        ;DRS - GAMA                                                  ;DRS - PARANOA                                               ;DRS - PLANALTINA                                            ;DRS - RECANTO DAS EMAS                                      ;DRS - SAMAMBAIA                                             ;DRS - SANTA MARIA                                           ;HBDF                                                        ;HOSPITAL DE APOIO                                           ;HSVP                                                        ;SUPERINTENDENCIA DA REGIAO DE SAUDE CENTRO-NORTE            ;SUPERINTENDENCIA DA REGIAO DE SAUDE CENTRO-SUL              ;SUPERINTENDENCIA DA REGIAO DE SAUDE LESTE                   ;SUPERINTENDENCIA DA REGIAO DE SAUDE NORTE                   ;SUPERINTENDENCIA DA REGIAO DE SAUDE OESTE                   ;SUPERINTENDENCIA DA REGIAO DE SAUDE SUDOESTE                ;SUPERINTENDENCIA DA REGIAO DE SAUDE SUL                     ;Total Geral
+MED. DA FAMILIA E COMUNIDADE  ;14;;2;3;;2;1;;1;;12;38;47;68;18;80;16;302
+MED.OTORRINOL.CABECA/PESCOCO  ;;;;;;;;1;;;;;;;;;;1
+MED.PEDIATRIA-C/FORM.CARDIOL  ;1;;;;;;;3;;;;;;;;;;4
+MEDICO - ACUPUNTURA           ;1;;;;;;;5;1;;3;2;1;1;2;1;3;20
+MEDICO - ALERGIA E IMUNOLOGI  ;1;;;;;;;7;;;3;2;;;;2;;15
+MEDICO - ANATOMIA PATOLOGICA  ;;;;;;;;7;;;6;4;;4;7;6;5;39
+MEDICO - ANESTESIOLOGIA       ;5;;;1;;;;47;;;35;22;21;34;35;42;49;291
+MEDICO - BIOMET.E PER. MEDIC  ;2;;;;;;;;;;;;;;;;;2
+MEDICO - BRONCOESOFAGOLOGIA   ;;;;;;;;15;;;;;;;;;;15
+MEDICO - CARDIOLOGIA          ;1;;;;;;;47;;;6;5;7;9;3;27;22;127
+MEDICO - CIR. CARD.-PERIFERI  ;;;;;;;;3;;;;;;;;;;3
+MEDICO - CIR. CARDIOVASC. CA  ;;;;;;;;8;;;;;;;;;;8
+MEDICO - CIRURGIA GERAL       ;8;;;;;1;;55;;;46;;33;55;54;65;60;377
+MEDICO - CIRURGIA PEDIATRICA  ;1;;;;;;;12;;;;19;;;;;;32
+MEDICO - CIRURGIA PLASTICA    ;;;;;;;;2;;;35;;;3;;;1;41
+MEDICO - CIRURGIA TORAXICA    ;;;;;;;;6;;;6;;;;;;;12
+MEDICO - CIRURGIA VASCULAR    ;;;;;;;;27;;;11;1;;1;;7;7;54
+MEDICO - CITOLOGIA            ;3;;;;;;;2;;;2;17;;;;;;24
+MEDICO - CITOPATOLOGIA        ;;;;;;;;;;;;2;;;;;;2
+MEDICO - CL. MED. QUEIMADOS   ;1;;;;;;;1;;;20;3;;;1;1;3;30
+MEDICO - CLINICA MEDICA       ;114;;1;;3;2;3;60;18;1;75;89;74;100;99;142;74;855
+MEDICO - DERMATOLOGIA         ;2;;;;;;;1;;;9;7;3;3;6;8;5;44
+MEDICO - ELETROMIOGRAFIA      ;;;;;;;;3;;;;;;;;1;;4
+MEDICO - ENDOCRINOLOGIA       ;1;;;;;;;10;;;9;5;2;5;4;12;4;52
+MEDICO - GASTROENTEROLOGIA    ;1;;;;;;;18;;;5;;;3;5;8;8;48
+MEDICO - GENERALISTA          ;;;;;;;;;;;1;2;;5;1;;1;10
+MEDICO - GENETICA CLINICA     ;;;;;;;;;10;;;;;;;;;10
+MEDICO - GERIATRIA            ;3;;;;;;;;;;2;1;1;2;3;5;2;19
+MEDICO - GINECO.E OBSTETRICI  ;16;;;1;;;2;10;;;59;123;38;70;92;103;92;606
+MEDICO - HEMATOLOGIA          ;2;;;;;;;19;2;;3;1;1;1;1;4;2;36
+MEDICO - HEMOTERAPIA          ;;;;;;;;1;;;;;;;1;;;2
+MEDICO - HOMEOPATIA           ;1;;;;;;;;;;5;4;;3;1;2;;16
+MEDICO - MASTOLOGIA           ;1;;;;;;;13;;;1;3;2;2;2;1;2;27
+MEDICO - MED. FIS. E REABILI  ;;;;;;;;3;2;;;1;;;;;;6
+MEDICO - MEDICINA DO TRABALH  ;5;;;;;;;4;1;1;3;4;3;2;3;2;3;31
+MEDICO - MEDICINA NUCLEAR     ;;;;;;;;6;;;;;;;;;;6
+MEDICO - NEFROLOGIA           ;1;;;;;;;24;;;7;1;;9;1;19;15;77
+MEDICO - NEONATOLOGIA         ;6;;1;;;;;2;;;5;33;9;20;14;22;15;127
+MEDICO - NEUROCIRURGIA        ;2;;;;;;;27;;;;;4;;;;;33
+MEDICO - NEUROLOGIA           ;2;;;;;;;24;1;;5;1;1;6;5;4;3;52
+MEDICO - OFTALMOLOGIA         ;4;;;;;;;25;;;15;5;1;1;1;18;8;78
+MEDICO - ONCOLOGIA CLINICA    ;;;;;;;;15;1;;;;;;;4;;20
+MEDICO - ORT. E TRAUMATOLOGI  ;8;;;;;;;41;2;;;2;55;48;40;38;65;299
+MEDICO - OTORRINOLARINGOLOGI  ;2;;;;;;;27;;;6;5;;3;4;12;4;63
+MEDICO - PATOLOGIA CLINICA    ;;;;;;;;5;;;;;;;1;1;2;9
+MEDICO - PEDIATRA             ;;;;;;;;;;;;;;;;;22;22
+MEDICO - PEDIATRIA            ;39;;;;;;2;38;6;;50;126;62;85;86;86;41;621
+MEDICO - PNEUMOLOGIA          ;;;;;;;;9;;;9;1;;1;1;2;4;27
+MEDICO - PROCTOLOGIA          ;;;;;;;;7;;;1;2;;2;3;2;3;20
+MEDICO - PSIQUIATRIA          ;11;;2;;;;2;10;;23;15;20;4;7;4;9;2;109
+MEDICO - RADIOLOGISTA         ;4;;;;;;;27;2;;14;16;8;16;8;27;21;143
+MEDICO - RADIOTERAPIA         ;;;;;;;;8;;;;;;;;;;8
+MEDICO - REUMATOLOGIA         ;;;;;;;;10;;;3;;2;2;3;3;2;25
+MEDICO - SANITARISTA          ;5;;;;;;;1;1;;3;3;;2;1;;;16
+MEDICO - TER. INT. PEDIATRIC  ;2;;;;;;;22;;;1;27;;;;14;1;67
+MEDICO - TERAPIA INT. ADULTO  ;7;1;;;;;;53;;;13;5;9;8;6;28;10;140
+MEDICO - TERAPIA INT.ADULTO   ;;;;;;;;;;;;;;;;;7;7
+MEDICO - TISIOLOGIA           ;1;;;;;;;;;;1;;;1;1;;3;7
+MEDICO - UROLOGIA             ;1;;;;;;;20;;;10;2;2;4;2;5;7;53
+MEDICO ..                     ;4;;;;;;;1;;;1;;;;;1;;7
+MEDICO ...                    ;;;;;;;;;;;1;;;1;;;;2
+MEDICO CIRURGIA VASC. PERIF.  ;;;;;;;;;;;1;;;;;;;1
+MEDICO RADIOLOGISTA           ;;;;;;;;1;;;;;1;1;;1;;4
+MEDICO-CIR.CABECA E PESCOCO   ;;;;;;;;10;;;;;;;;;;10
+MEDICO-CIRURGIA ONCOLOGICA    ;;;;;;;;3;;;;;;;;;;3
+MEDICO-COLOPROCTOLOGISTA      ;;;;;;;;2;;;;1;;;;2;;5
+MEDICO-INFECTOLOGISTA         ;1;;;;;;;8;;;6;6;2;1;3;5;4;36
+MEDICO-NEUROLOGIA PEDIATRICA  ;;;;;;;;3;2;;2;3;1;1;1;2;;15
+MEDICOS - PROVAB              ;;;;;;;;;;;;1;;1;11;1;8;22
+Total Geral;284;1;6;5;3;5;10;819;50;25;526;615;394;591;534;825;606;5299

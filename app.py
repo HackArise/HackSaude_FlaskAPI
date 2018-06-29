@@ -46,6 +46,23 @@ def LocalRegister():
     db.session.commit()
     return Response(status=200, mimetype='application/json')
 
+@app.route('/journey/register', methods=['POST'])
+def JourneyRegister():
+    journey = request.get_json()
+    db.session.add(Journey(begin=journey['begin'], end=journey['end'], employees=\
+    Employee.query.filter_by(name=journey['employee_name']).first(), local_journeys=\
+    Local.query.filter_by(name=journey['local_name']).first()))
+    db.session.commit()
+    return Response(status=200, mimetype='application/json')
+
+@app.route('/demand/register', methods=['POST'])
+def DemandRegister():
+    demand = request.get_json()
+    db.session.add(Demand(field_demands=Field.query.filter_by(name=demand['field_name']).first(),
+    local_demands=Local.query.filter_by(name=demand['local_name']).first()))
+    db.session.commit()
+    return Response(status=200, mimetype='application/json')
+
 
 with app.app_context():
 	db.create_all()
