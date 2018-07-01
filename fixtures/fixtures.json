@@ -6,7 +6,7 @@ FIELDS.JSON
 
 EMPLOYEE.JSON
 {
-  "cpf": 15319279116,
+  "cpf": "15319279116",
   "name": "Roberto",
   "path_image": "desktop/lael",
   "field": "Ciruirgião"

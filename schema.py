@@ -11,32 +11,34 @@ class LocalTypeSchema(ma.Schema):
 
 class FieldSchema(ma.Schema):
     id = fields.Int(dump_only=True)
+    name = fields.Str()
     description = fields.Str()
-    name = fields.Str()
-
-class EmployeeSchema(ma.Schema):
-    cpf = fields.Int(dump_only=True)
-    name = fields.Str()
-    path_image = fields.Str()
-    field_id = fields.Nested(FieldSchema)
-
-class LocalSchema(ma.Schema):
-    id = fields.Int(dump_only=True)
-    latitude = fields.Str()
-    longitude = fields.Str()
-    name = fields.Str()
-    address = fields.Str()
-    phone = fields.Str()
-    local_type_id = fields.Nested(LocalTypeSchema)
+    # employees = fields.Nested(EmployeeSchema, Many=True)
+    # demands = fields.Nested(DemandSchema, Many=True)
 
 class DemandSchema(ma.Schema):
     id = fields.Int(dump_only=True)
-    field_id = fields.Nested(FieldSchema)
-    local_id = fields.Nested(LocalSchema)
+    fields = fields.Nested(FieldSchema, attribute='field_demands', only=['name'])
+    # local_id = fields.Nested(LocalSchema)
+
+class LocalSchema(ma.Schema):
+    name = fields.Str()
+    address = fields.Str()
+    latitude = fields.Str()
+    longitude = fields.Str()
+    phone = fields.Str()
+    local_type = fields.Nested(LocalTypeSchema, attribute='local_type', only=['type','tag'])
+    demands = fields.Nested(DemandSchema, many=True, only=['fields'])
 
 class JourneySchema(ma.Schema):
     id = fields.Int(dump_only=True)
     begin = fields.Str()
     end = fields.Str()
-    employee_cpf = fields.Nested(EmployeeSchema)
-    local_id = fields.Nested(LocalSchema)
+    local = fields.Nested(FieldSchema, attribute='local_journeys', only=['name'])
+
+class EmployeeSchema(ma.Schema):
+    name = fields.Str()
+    cpf = fields.Int()
+    path_image = fields.Str()
+    field = fields.Nested(FieldSchema, attribute='field_employees', only=['name','description'])
+    journeys = fields.Nested(JourneySchema, many=True, only=['begin', 'end', 'local' ])
